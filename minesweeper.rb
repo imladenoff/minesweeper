@@ -8,6 +8,10 @@ class MineSweeper
     @board = Board.new
   end
 
-
+  def play
+    until board.won?
+      board.render
+    end
+  end
 
 end
